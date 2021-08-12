@@ -50,10 +50,7 @@ class Gamme:
             note_suivante = self.note_suivante(note_suivante,inter)
         return gamme
 
-
-do = Note(0)
-
-
+    
 majeur = Gamme()
 mineur_mel = Gamme()
 mineur_harmo = Gamme()
