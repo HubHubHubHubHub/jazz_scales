@@ -54,10 +54,12 @@ class Gamme:
 majeur = Gamme()
 mineur_mel = Gamme()
 mineur_harmo = Gamme()
+majeur_harmo = Gamme()
 
 majeur.intervalles = [2,2,1,2,2,2,1]
 mineur_mel.intervalles = [1,2,1,2,2,2,2]
-
+mineur_harmo.intervalles = [2,2,1,3,1,2,1]
+majeur_harmo.intervalles = [2,2,1,2,1,3,1]
 
 def essai(i,j,gamme):
     ma_note = Note(i, j)
@@ -75,3 +77,8 @@ def genere_multi_tonalitees(gamme):
 genere_multi_tonalitees(majeur)
 print("--------")
 genere_multi_tonalitees(mineur_mel)
+print("--------")
+genere_multi_tonalitees(mineur_harmo)
+print("--------")
+genere_multi_tonalitees(majeur_harmo)
+
